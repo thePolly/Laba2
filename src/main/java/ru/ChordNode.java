@@ -39,7 +39,7 @@ public class ChordNode {
 
     @Override
     public String toString() {
-        return fingerStarts.toString() + " " + successor + " " + predecessor;
+        return  fingerStarts.toString() + " " + successor + " " + predecessor;
     }
 
     public Integer getId() {

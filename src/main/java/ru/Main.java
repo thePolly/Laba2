@@ -11,12 +11,19 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         final int m;
+         int n = 0;
+
         List<Integer> nodes = new ArrayList<Integer>();
         int node;
 
+        System.out.println("Type number of m = >");
+        m = scanner.nextInt();
+       do {
             System.out.println("Type number of nodes = >");
-            m = scanner.nextInt();
-            for (int i = 0; i < m; i++) {
+            n = scanner.nextInt();
+       } while (n > Math.pow(2, m));
+
+        for (int i = 0; i < n; i++) {
                 do {
                     System.out.println("Type id of node = >");
                     node = scanner.nextInt();
@@ -68,13 +75,13 @@ public class Main {
                     System.out.println("Type index =>");
                     tmp2 = scanner.nextInt();
                     chordNodes = addNode(tmp2, nodes, m);
-                    System.out.println(chordNodes);
+                    System.out.println("Node is added");
                     break;
                 case (3):
                     System.out.println("Type index =>");
                     tmp2 = scanner.nextInt();
                     chordNodes=deleteNode(tmp2,  nodes, m);
-                    System.out.println(chordNodes);
+                    System.out.println("Node is deleted");
                     break;
                 case (4):
                     chordNodes.forEach(chordNode -> {

@@ -59,7 +59,7 @@ public class FingerTable {
 
     @Override
     public String toString() {
-        return "\tStart : " + start + "\n"
+        return "\n" + "\tStart : " + start + "\n"
                 + "\tInterval : " + interval.from + " " + interval.to + "\n"
                 + "\tNode : " + node + "\n";
     }
